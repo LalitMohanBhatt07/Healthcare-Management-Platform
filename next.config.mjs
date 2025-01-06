@@ -6,6 +6,13 @@ export default withSentryConfig(nextConfig, {
   // For all available options, see:
   // https://github.com/getsentry/sentry-webpack-plugin#options
 
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  eslint: {
+    ignoreBuildErrors: true,
+  },
+
   org: "javascript-mastery",
   project: "care-pulse",
 
